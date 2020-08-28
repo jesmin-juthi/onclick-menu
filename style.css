@@ -1,0 +1,45 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.container{
+	width: 990px;
+	margin: 0 auto;
+}
+#header{
+	height: 80px;
+	background: orange;
+}
+.menu ul li{
+	display: inline-block;
+	list-style: none;
+	position: relative;
+}
+.menu ul li a{
+	display: block;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    padding: 28px 25px;
+    font-weight: bold;
+    transition: .4s background;
+}
+.menu ul li a:hover{
+	background: #FF8C00;
+}
+.menu ul li ul{
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 200px;
+	background: orange;
+	border-top: 1px solid #ff8c00;
+	display: none;
+}
+.menu ul li ul li{
+	display: block;
+}
+.menu ul li:hover ul{
+	/*display: block;*/
+}
+

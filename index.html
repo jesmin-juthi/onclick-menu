@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="style.css">
+
+ <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+<script>
+$(document).ready(function(){
+  $(".menu li").click(function(){
+    $(".dropdown").toggle();
+
+    $(".fa-caret-down").toggle();
+    $(".fa-caret-up").toggle();
+
+  });
+});
+</script>
+
+
+<style type="text/css">
+	
+	.fa-caret-up{
+	display: none;
+}
+</style>
+
+</head>
+<body>
+	<header id="header">
+		<div class="container">
+			<div class="menu">
+				<ul align="right" >
+					<li><a href="#">Home</a></li>
+					<li><a href="#">About</a></li>
+
+
+					<li><a href="#">Service <i class="fas fa-caret-down"></i> <i class="fas fa-caret-up"></i></a>
+						<ul align="left" class="dropdown">
+							<li><a href="#">HTML</a></li>
+							<li><a href="#">CSS</a></li>
+							<li><a href="#">JS</a></li>
+						</ul>
+
+					</li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+</body>
+</html>
